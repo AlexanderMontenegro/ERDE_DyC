@@ -1,16 +1,17 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Product from './pages/Product';
-import NotFound from './pages/NotFound';
+import { Routes, Route} from "react-router-dom";
+import "./styles/index.css";
+import Landing from "./pages/LandigPage";
+import Home from "./pages/Home";
+
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/product/:id" element={<Product />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+
+      <Routes>
+         <Route path='/' element={<Landing/>}/>  
+         <Route path='/home' element={<Home/>}/>
+      </Routes>
+
   );
 }
 
