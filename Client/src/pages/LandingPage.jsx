@@ -31,7 +31,7 @@ const LandingPage = () => {
       <div className="logo-container" onClick={handleLogoClick}>
         <div className="logo-background">
           <img
-            src="../../public/iconos/logo.png"
+            src="/Client/public/iconos/logo.png"
             alt="Logo de la empresa"
             className="logo"
           />

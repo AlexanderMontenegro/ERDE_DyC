@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css'; 
@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/home">
-          <img src="../../public/iconos/logo.png" alt="Logo" className="logo" />
+          <img src="/Client/public/iconos/logo.png" alt="Logo" className="logo" />
         </Link>
       </div>
       <ul className="navbar-links">
