@@ -1,0 +1,48 @@
+
+.articulo {
+    display: grid;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: auto;
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    height: 70vh;
+    
+  }
+
+  
+  .articulo-imagen {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  .articulo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .articulo-nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .articulo-descripcion,
+  .articulo-precio,
+  .articulo-material,
+  .articulo-categoria,
+  .articulo-talles {
+    margin: 4px 0;
+  }
+  
+  .articulo-precio {
+    font-size: 1em;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  

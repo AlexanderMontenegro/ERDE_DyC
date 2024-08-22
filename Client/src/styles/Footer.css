@@ -1,0 +1,42 @@
+
+.footer {
+  background-color: #222; 
+  color: #f50909; 
+  padding: 5px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 50rem;
+  
+}
+
+
+.nosotros{
+  display: grid;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nosotros p{
+  color: var(--amarillo);
+  margin: auto;
+}
+
+.nosotros p:hover{
+  color: var(--rojoOscuro);
+
+}
+
+.social-media{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+ 
+}
+
+.logo_img{
+  width: 4vw;
+  height: 8vh;
+}

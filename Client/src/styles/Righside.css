@@ -1,0 +1,36 @@
+.carrusel_p {
+  position: relative;
+  overflow: hidden;
+  height: 70vh; 
+  width: 10vw;
+  margin: 10px;
+}
+
+.carrusel_p1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.item_p {
+  flex: 0 0 100%;
+  transition: transform 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_p img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item_p.active img {
+  transform: scale(1.2); 
+}
+
+.item_p:not(.active) img {
+  transform: scale(0.8);
+}

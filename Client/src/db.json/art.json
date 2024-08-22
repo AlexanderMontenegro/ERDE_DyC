@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "nombre": "Remera Personalizada Vintage",
+      "descripcion": "Remera de algodón con diseño vintage personalizado.",
+      "precio": 25.99,
+      "talles": ["S", "M", "L", "XL"],
+      "material": "Algodón",
+      "categoria": "Remeras",
+      "imagen": "/Client/public/img/banner1.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Taza Personalizada Gamer",
+      "descripcion": "Taza de cerámica con diseño para gamers.",
+      "precio": 15.49,
+      "material": "Cerámica",
+      "categoria": "Tazas",
+      "imagen": "/Client/public/img/banner2.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Gorra Estilo Urbano",
+      "descripcion": "Gorra ajustable con diseño urbano personalizado.",
+      "precio": 19.99,
+      "material": "Poliéster",
+      "categoria": "Gorras",
+      "imagen": "/Client/public/img/banner3.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Modelo 3D: Coche Deportivo",
+      "descripcion": "Modelo 3D de un coche deportivo listo para impresión.",
+      "precio": 35.99,
+      "material": "PLA",
+      "categoria": "Modelos 3D",
+      "imagen": "/Client/public/img/banner4.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Buzo Personalizado Anime",
+      "descripcion": "Buzo de algodón con diseño de tu anime favorito.",
+      "precio": 45.99,
+      "talles": ["M", "L", "XL", "XXL"],
+      "material": "Algodón",
+      "categoria": "Buzos",
+      "imagen": "/Client/public/img/banner5.png"
+    }
+    
+  ]
+  

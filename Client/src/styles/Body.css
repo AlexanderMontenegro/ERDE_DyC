@@ -1,0 +1,24 @@
+.body {
+  display: grid;
+  background-color: var(--imgfondo);
+  padding: auto;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.body h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #333;
+}
+
+.body ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}

@@ -1,17 +1,17 @@
-import { Routes, Route} from "react-router-dom";
-import "./styles/index.css";
-import Landing from "./pages/LandigPage";
-import Home from "./pages/Home";
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
-
+    <Router>
       <Routes>
-         <Route path='/' element={<Landing/>}/>  
-         <Route path='/home' element={<Home/>}/>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
+        
       </Routes>
-
+    </Router>
   );
 }
 
