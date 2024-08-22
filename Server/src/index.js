@@ -13,7 +13,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 require('dotenv').config(); // Asegúrate de cargar las variables de entorno
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4000;
 
 // Configuración del middleware
 app.use(express.json());
