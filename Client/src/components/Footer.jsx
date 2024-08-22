@@ -21,7 +21,7 @@ const Footer = () => {
         <Link to="/home">
           <img
             className="logo_img"
-            src="../../public/iconos/logo.png"
+            src="/iconos/logo.png"
             alt="Logo"
           />
         </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
           >
             <img
               className="logo_img"
-              src="../iconos/facebook.png"
+              src="/iconos/facebook.png"
               alt="Facebook"
             />
           </a>
@@ -50,7 +50,7 @@ const Footer = () => {
           >
             <img
               className="logo_img"
-              src="../iconos/instagram.png"
+              src="/iconos/instagram.png"
               alt="Instagram"
             />
           </a>
@@ -63,7 +63,7 @@ const Footer = () => {
           >
             <img
               className="logo_img"
-              src="../../public/iconos/whatsapp.png"
+              src="/iconos/whatsapp.png"
               alt="Whatsapp"
             />
           </a>
