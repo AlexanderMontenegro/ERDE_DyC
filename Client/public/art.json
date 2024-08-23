@@ -1,51 +1,143 @@
 [
-    {
-      "id": 1,
-      "nombre": "Remera Personalizada Vintage",
-      "descripcion": "Remera de algodón con diseño vintage personalizado.",
-      "precio": 25.99,
-      "talles": ["S", "M", "L", "XL"],
-      "material": "Algodón",
-      "categoria": "Remeras",
-      "imagen": "/Client/public/img/banner1.png"
-    },
-    {
-      "id": 2,
-      "nombre": "Taza Personalizada Gamer",
-      "descripcion": "Taza de cerámica con diseño para gamers.",
-      "precio": 15.49,
-      "material": "Cerámica",
-      "categoria": "Tazas",
-      "imagen": "/Client/public/img/banner2.png"
-    },
-    {
-      "id": 3,
-      "nombre": "Gorra Estilo Urbano",
-      "descripcion": "Gorra ajustable con diseño urbano personalizado.",
-      "precio": 19.99,
-      "material": "Poliéster",
-      "categoria": "Gorras",
-      "imagen": "/Client/public/img/banner3.png"
-    },
-    {
-      "id": 4,
-      "nombre": "Modelo 3D: Coche Deportivo",
-      "descripcion": "Modelo 3D de un coche deportivo listo para impresión.",
-      "precio": 35.99,
-      "material": "PLA",
-      "categoria": "Modelos 3D",
-      "imagen": "/Client/public/img/banner4.png"
-    },
-    {
-      "id": 5,
-      "nombre": "Buzo Personalizado Anime",
-      "descripcion": "Buzo de algodón con diseño de tu anime favorito.",
-      "precio": 45.99,
-      "talles": ["M", "L", "XL", "XXL"],
-      "material": "Algodón",
-      "categoria": "Buzos",
-      "imagen": "/Client/public/img/banner5.png"
-    }
-    
-  ]
-  
+  {
+    "id": 6,
+    "nombre": "Camiseta Retro de Rock",
+    "descripcion": "Camiseta de algodón con diseño retro de bandas de rock.",
+    "precio": 22.99,
+    "talles": ["S", "M", "L", "XL"],
+    "material": "Algodón",
+    "categoria": "Camisetas",
+    "imagen": "/Client/public/img/banner6.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Taza de Café Motivacional",
+    "descripcion": "Taza de cerámica con frase motivacional.",
+    "precio": 12.99,
+    "material": "Cerámica",
+    "categoria": "Tazas",
+    "imagen": "/Client/public/img/banner7.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Gorra de Deporte",
+    "descripcion": "Gorra ajustable para actividades deportivas.",
+    "precio": 18.99,
+    "material": "Poliéster",
+    "categoria": "Gorras",
+    "imagen": "/Client/public/img/banner8.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Modelo 3D: Edificio Futurista",
+    "descripcion": "Modelo 3D de un edificio futurista para impresión.",
+    "precio": 50.99,
+    "material": "PLA",
+    "categoria": "Modelos 3D",
+    "imagen": "/Client/public/img/banner9.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Buzo Estilo Deportivo",
+    "descripcion": "Buzo de algodón con diseño deportivo moderno.",
+    "precio": 49.99,
+    "talles": ["M", "L", "XL"],
+    "material": "Algodón",
+    "categoria": "Buzos",
+    "imagen": "/Client/public/img/banner10.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Camiseta de Manga Larga Casual",
+    "descripcion": "Camiseta de manga larga de algodón, ideal para el uso diario.",
+    "precio": 29.99,
+    "talles": ["S", "M", "L", "XL"],
+    "material": "Algodón",
+    "categoria": "Camisetas",
+    "imagen": "/Client/public/img/banner11.png"
+  },
+  {
+    "id": 12,
+    "nombre": "Taza de Cerámica para Té",
+    "descripcion": "Taza de cerámica con diseño elegante para té.",
+    "precio": 17.99,
+    "material": "Cerámica",
+    "categoria": "Tazas",
+    "imagen": "/Client/public/img/banner12.png"
+  },
+  {
+    "id": 13,
+    "nombre": "Gorra de Senderismo",
+    "descripcion": "Gorra ajustable, perfecta para actividades al aire libre.",
+    "precio": 21.49,
+    "material": "Nylon",
+    "categoria": "Gorras",
+    "imagen": "/Client/public/img/banner13.png"
+  },
+  {
+    "id": 14,
+    "nombre": "Modelo 3D: Robot Futurista",
+    "descripcion": "Modelo 3D de un robot futurista para impresión 3D.",
+    "precio": 42.99,
+    "material": "PLA",
+    "categoria": "Modelos 3D",
+    "imagen": "/Client/public/img/banner14.png"
+  },
+  {
+    "id": 15,
+    "nombre": "Buzo con Estampado Floral",
+    "descripcion": "Buzo de algodón con estampado floral vibrante.",
+    "precio": 55.99,
+    "talles": ["S", "M", "L"],
+    "material": "Algodón",
+    "categoria": "Buzos",
+    "imagen": "/Client/public/img/banner15.png"
+  },
+  {
+    "id": 16,
+    "nombre": "Camiseta con Mensaje Divertido",
+    "descripcion": "Camiseta de algodón con mensaje divertido y gráfico.",
+    "precio": 23.99,
+    "talles": ["M", "L", "XL"],
+    "material": "Algodón",
+    "categoria": "Camisetas",
+    "imagen": "/Client/public/img/banner16.png"
+  },
+  {
+    "id": 17,
+    "nombre": "Taza de Cerámica con Foto Personalizada",
+    "descripcion": "Taza de cerámica personalizable con tu propia foto.",
+    "precio": 19.49,
+    "material": "Cerámica",
+    "categoria": "Tazas",
+    "imagen": "/Client/public/img/banner17.png"
+  },
+  {
+    "id": 18,
+    "nombre": "Gorra de Verano",
+    "descripcion": "Gorra ligera para protegerte del sol en verano.",
+    "precio": 16.99,
+    "material": "Algodón",
+    "categoria": "Gorras",
+    "imagen": "/Client/public/img/banner18.png"
+  },
+  {
+    "id": 19,
+    "nombre": "Modelo 3D: Dinosaurio Prehistórico",
+    "descripcion": "Modelo 3D de un dinosaurio para impresión en 3D.",
+    "precio": 29.99,
+    "material": "PLA",
+    "categoria": "Modelos 3D",
+    "imagen": "/Client/public/img/banner19.png"
+  },
+  {
+    "id": 20,
+    "nombre": "Buzo de Anime con Capucha",
+    "descripcion": "Buzo con capucha y diseño de anime, hecho de algodón.",
+    "precio": 60.99,
+    "talles": ["M", "L", "XL"],
+    "material": "Algodón",
+    "categoria": "Buzos",
+    "imagen": "/Client/public/img/banner20.png"
+  }
+]

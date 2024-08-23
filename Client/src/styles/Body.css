@@ -1,16 +1,18 @@
 
-.body {
+.body_b {
   width: 100%;
-  display: flex;
+
+  display: grid;
   grid:
-    "filtros articulos" 1fr
+    "sidebar body" 1fr
+    ". paginado" auto
     / auto 1fr;
   gap: 8px;
 }
 
-
-.filtros { grid-area: filtros; }
-.articulos { grid-area: articulos; }
+.sidebar { grid-area: sidebar; }
+.body_b { grid-area: body; }
+.paginado { grid-area: paginado; }
 
 
 .filtros {

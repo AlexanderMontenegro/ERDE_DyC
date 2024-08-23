@@ -1,27 +1,29 @@
-import { useEffect, useState } from 'react';
-import '../styles/Body.css';
-import Articulo from '../components/Articulo';
+import { useEffect, useState } from "react";
+import "../styles/Body.css";
+import Articulo from "../components/Articulo";
+import Paginado from "../components/Paginado";
 
 const Body = () => {
   const [articulos, setArticulos] = useState([]);
-  const [filtroCategoria, setFiltroCategoria] = useState('');
-  const [filtroPrecio, setFiltroPrecio] = useState('');
-  const [filtroMaterial, setFiltroMaterial] = useState('');
-  const [filtroTalle, setFiltroTalle] = useState('');
-  const [filtroEstampado, setFiltroEstampado] = useState('');
+  const [filtroCategoria, setFiltroCategoria] = useState("");
+  const [filtroPrecio, setFiltroPrecio] = useState("");
+  const [filtroMaterial, setFiltroMaterial] = useState("");
+  const [filtroTalle, setFiltroTalle] = useState("");
+  const [filtroEstampado, setFiltroEstampado] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [articlesPerPage] = useState(6);
 
   useEffect(() => {
-    fetch('/art.json')
-      .then(response => {
+    fetch("/art.json")
+      .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
-      .then(data => setArticulos(data))
-      .catch(error => console.error('Error al cargar los artículos:', error));
+      .then((data) => setArticulos(data))
+      .catch((error) => console.error("Error al cargar los artículos:", error));
   }, []);
-
 
   const handleFiltroCategoriaChange = (e) => {
     setFiltroCategoria(e.target.value);
@@ -43,22 +45,40 @@ const Body = () => {
     setFiltroEstampado(e.target.value);
   };
 
- 
-  const articulosFiltrados = articulos.filter(articulo => {
+  const articulosFiltrados = articulos.filter((articulo) => {
     return (
       (filtroCategoria ? articulo.categoria === filtroCategoria : true) &&
-      (filtroPrecio ? 
-        (filtroPrecio === 'low' && articulo.precio < 20) ||
-        (filtroPrecio === 'medium' && articulo.precio >= 20 && articulo.precio <= 40) ||
-        (filtroPrecio === 'high' && articulo.precio > 40) : true) &&
+      (filtroPrecio
+        ? (filtroPrecio === "low" && articulo.precio < 20) ||
+          (filtroPrecio === "medium" &&
+            articulo.precio >= 20 &&
+            articulo.precio <= 40) ||
+          (filtroPrecio === "high" && articulo.precio > 40)
+        : true) &&
       (filtroMaterial ? articulo.material === filtroMaterial : true) &&
       (filtroTalle ? articulo.talles?.includes(filtroTalle) : true) &&
-      (filtroEstampado ? articulo.descripcion.toLowerCase().includes(filtroEstampado.toLowerCase()) : true)
+      (filtroEstampado
+        ? articulo.descripcion
+            .toLowerCase()
+            .includes(filtroEstampado.toLowerCase())
+        : true)
     );
   });
 
+  const totalPages = Math.ceil(articulosFiltrados.length / articlesPerPage);
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = articulosFiltrados.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
-    <main className="body">
+    <main className="body_b">
       <div className="filtros">
         <h2>Filtros</h2>
         <select onChange={handleFiltroCategoriaChange} value={filtroCategoria}>
@@ -98,8 +118,8 @@ const Body = () => {
         </select>
 
         <h3>Estampado</h3>
-        <input 
-          type="text" 
+        <input
+          type="text"
           placeholder="Buscar por estampado"
           value={filtroEstampado}
           onChange={handleFiltroEstampadoChange}
@@ -108,8 +128,8 @@ const Body = () => {
 
       <div className="articulos">
         <ul>
-          {articulosFiltrados.map(articulo => (
-            <Articulo 
+          {currentArticles.map((articulo) => (
+            <Articulo
               key={articulo.id}
               nombre={articulo.nombre}
               imagen={articulo.imagen}
@@ -121,6 +141,13 @@ const Body = () => {
             />
           ))}
         </ul>
+      </div>
+      <div className="paginado">
+        <Paginado
+          totalPages={totalPages}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+        />
       </div>
     </main>
   );

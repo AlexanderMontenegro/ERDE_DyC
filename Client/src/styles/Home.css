@@ -1,18 +1,45 @@
 .layout {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid:
-      "header header header" auto
-      "leftSide body rightSide" 1fr
-      "footer footer footer" auto
-      / auto 1fr auto;
-    gap: 8px;
-    min-width: 90vw
-  }
-  
-  .header { grid-area: header; }
-  .leftSide { grid-area: leftSide; }
-  .body { grid-area: body; }
-  .rightSide { grid-area: rightSide; }
-  .footer { grid-area: footer; }
+  width: 100%;
+  height: 100vh; 
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "body body rightSide"
+    "footer footer footer";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.rightSide {
+  grid-area: rightSide;
+}
+
+.body {
+  grid-area: body;
+  overflow-y: auto; 
+  max-height: calc(100vh - /* altura del header */ - /* altura del footer */); 
+  padding: 8px; 
+  scrollbar-color: transparent transparent; 
+}
+
+
+.body::-webkit-scrollbar {
+  width: 8px; /
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+.body::-webkit-scrollbar-track {
+  background: transparent; 
+}
