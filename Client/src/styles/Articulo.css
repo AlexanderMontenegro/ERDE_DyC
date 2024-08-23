@@ -1,6 +1,5 @@
 .articulo {
-
-  border: 1px solid #ddd;
+  border: 1px solid var(--amarillo);
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
@@ -11,14 +10,16 @@
 }
 
 .articulo{
-width: 20%;
-display: grid;
-grid:
+  min-height: auto;
+  display: grid;
+  grid:
   "articulo-nombre" auto
   "articulo-imagen" auto
   "articulo-info" auto
   / 1fr;
-gap: 8px;
+  gap: 8px;
+  width: 20%;
+  max-width: 20%;
 }
 
 .articulo-nombre { grid-area: articulo-nombre; }
@@ -57,7 +58,7 @@ gap: 8px;
 }
 
 .articulo-descripcion {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--azulOscuro);
   margin: 8px 0;
 }
