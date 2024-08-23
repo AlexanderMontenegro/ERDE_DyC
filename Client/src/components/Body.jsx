@@ -11,7 +11,7 @@ const Body = () => {
   const [filtroTalle, setFiltroTalle] = useState("");
   const [filtroEstampado, setFiltroEstampado] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [articlesPerPage] = useState(6);
+  const [articlesPerPage] = useState(8);
 
   useEffect(() => {
     fetch("/art.json")

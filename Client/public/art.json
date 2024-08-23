@@ -16,7 +16,7 @@
     "precio": 15.49,
     "material": "Cerámica",
     "categoria": "Tazas",
-    "imagen": "/Client/public/img/banner2.png"
+    "imagen": "https://resources.claroshop.com/medios-plazavip/s2/16950/2520295/609e5a8fd2ebe-tz-s1-mg-game_over-1600x1600.jpg?scale=700&qlty=80"
   },
   {
     "id": 3,
@@ -25,7 +25,7 @@
     "precio": 19.99,
     "material": "Poliéster",
     "categoria": "Gorras",
-    "imagen": "/Client/public/img/banner3.png"
+    "imagen": "https://dcdn.mitiendanube.com/stores/004/416/646/products/whatsapp-image-2024-05-15-at-9-55-13-am-1-24b68c21a28172006317157899275613-480-0.jpeg"
   },
   {
     "id": 4,
@@ -34,7 +34,7 @@
     "precio": 35.99,
     "material": "PLA",
     "categoria": "Modelos 3D",
-    "imagen": "/Client/public/img/banner4.png"
+    "imagen": "https://img.freepik.com/fotos-premium/aislamiento-conceptual-coche-electrico-blanco-sobre-fondo-blanco-ia-generativa_896194-1454.jpg"
   },
   {
     "id": 5,
