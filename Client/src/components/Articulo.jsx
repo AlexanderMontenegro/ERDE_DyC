@@ -1,4 +1,3 @@
-// Client/src/components/Articulo.jsx
 import React from 'react';
 import '../styles/Articulo.css';
 

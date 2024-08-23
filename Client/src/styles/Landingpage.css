@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../public/img/fondo-galaxia-colorido-realista.png);
+    background-image: var(--imgfondo);
     background-size: cover;
   }
   

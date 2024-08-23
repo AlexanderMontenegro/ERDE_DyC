@@ -26,7 +26,7 @@
   --negro-transparente: rgba(0, 0, 0, 0.6);
 
   --banner: url("");
-  --imgfondo: url("../../public/img/fondo-galaxia-colorido-realista.png");
+  --imgfondo: url("/img/fondo.png");
 }
 
 

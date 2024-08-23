@@ -1,7 +1,6 @@
 require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
-// Determinar las variables de entorno según el entorno
 const isProduction = process.env.NODE_ENV === 'production';
 
 const sequelize = new Sequelize(
@@ -15,7 +14,7 @@ const sequelize = new Sequelize(
     dialectOptions: isProduction ? {
       ssl: {
         require: true,
-        rejectUnauthorized: false // Este es necesario para conexiones SSL en algunos entornos de Render
+        rejectUnauthorized: false 
       }
     } : {},
   }
