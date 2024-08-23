@@ -19,10 +19,13 @@ const Navbar = () => {
     <Link to="/carrito" className="nav-button">Carrito</Link>
   </li>
   <li>
-    <Link to="/productos" className="nav-button">Productos</Link>
+    <Link to="/favoritos" className="nav-button">Favoritos</Link>
   </li>
   <li>
     <Link to="/usuarios" className="nav-button">Usuarios</Link>
+  </li>
+  <li>
+    <Link to="/administracion" className="nav-button">Administracion</Link>
   </li>
 </ul>
 
