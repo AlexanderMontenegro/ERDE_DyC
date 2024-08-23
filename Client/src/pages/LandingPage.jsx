@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Landingpage.css";
-import imagesData from "../db.json/images.json"; 
+import imagesData from "../../public/images.json"; 
 
 const LandingPage = () => {
   const navigate = useNavigate();

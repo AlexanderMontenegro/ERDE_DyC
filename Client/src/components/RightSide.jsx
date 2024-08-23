@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Righside.css';
-import destacados from '../db.json/destacados.json'; 
+import destacados from '../../public/destacados.json'; 
 
 function RightSide() {
   const [index, setIndex] = useState(0);
