@@ -15,8 +15,6 @@ const Footer = () => {
         </Link>
       <p> ERDE Diseño & Creacion &copy; 2024</p>
       </div>
-
-
       <div className="social-media">
         <Link to="/home">
           <img

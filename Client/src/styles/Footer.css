@@ -1,11 +1,9 @@
 
 .footer {
-  background-color: #222; 
-  color: #f50909; 
+  background-color: var(--negro); 
   padding: 5px; 
   display: flex;
-  justify-content: space-around;
-  align-items: center; 
+  justify-content: space-around; 
   flex-wrap: wrap; 
   gap: 50rem;
   

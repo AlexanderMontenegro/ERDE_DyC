@@ -1,15 +1,33 @@
 .articulo {
-  display: flex;
+
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color:var(--gris-transparente);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: calc(25% - 20px); 
-  max-height: 50vh; 
+
 }
+
+.articulo{
+width: 20%;
+display: grid;
+grid:
+  "articulo-nombre" auto
+  "articulo-imagen" auto
+  "articulo-info" auto
+  / 1fr;
+gap: 8px;
+}
+
+.articulo-nombre { grid-area: articulo-nombre; }
+.articulo-imagen { grid-area: articulo-imagen; }
+.articulo-info { grid-area: articulo-info; }
+
+
+
+
 
 .articulo:hover {
   transform: translateY(-5px); 
@@ -17,8 +35,8 @@
 }
 
 .articulo-imagen {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: cover; 
   border-radius: 12px;
   margin-right: 16px;
@@ -32,41 +50,40 @@
 }
 
 .articulo-nombre {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 1.2rem;
+  color: var(--amarillo);
   margin-bottom: 12px;
   transition: color 0.3s ease;
 }
 
 .articulo-descripcion {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--azulOscuro);
   margin: 8px 0;
 }
 
 .articulo-precio {
   font-size: 1.2rem;
-  color: #e74c3c;
+  color: var(--rojoOscuro);
   font-weight: 700;
   margin: 8px 0;
 }
 
 .articulo-material {
   font-size: 1rem;
-  color: #555;
+  color: var(--celesteOpaco);
   margin: 8px 0;
 }
 
 .articulo-categoria {
   font-size: 1rem;
-  color: #777;
+  color: var(--celesteOpaco);
   margin: 8px 0;
 }
 
 .articulo-talles {
   font-size: 1rem;
-  color: #333;
+  color: var(--naranja);
   margin: 8px 0;
   font-style: italic;
 }
