@@ -6,6 +6,7 @@ import Carrito from './pages/Carrito';
 import Favoritos from './pages/Favoritos';
 import Usuarios from './pages/Usuarios';  
 import Administracion from './pages/Administracion';
+import Servicios from './pages/Servicios';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/favoritos' element={<Favoritos />} />
         <Route path='/usuarios' element={<Usuarios />} />
         <Route path='/administracion' element={<Administracion />} />
+        <Route path='/servicios' element={<Servicios />} />
         
       </Routes>
     </Router>

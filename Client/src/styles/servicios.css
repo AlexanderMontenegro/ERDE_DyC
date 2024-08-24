@@ -1,0 +1,17 @@
+.servicios {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid:
+      "nav nav nav" auto
+      "personalizado estampado modelado" 1fr
+      "footer footer footer" auto
+      / auto auto auto;
+    gap: 8px;
+  }
+  
+  .nav { grid-area: nav; }
+  .personalizado { grid-area: personalizado; }
+  .estampado { grid-area: estampado; }
+  .modelado { grid-area: modelado; }
+  .footer { grid-area: footer; }
