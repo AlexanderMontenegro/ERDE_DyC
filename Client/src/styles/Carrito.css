@@ -1,0 +1,17 @@
+.carrito{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid:
+      "nav nav nav" auto
+      "detalle pagar rightSide" 1fr
+      "footer footer footer" auto
+      / auto auto 0.1fr;
+    gap: 8px;
+  }
+  
+  .nav { grid-area: nav; }
+  .detalle { grid-area: detalle; }
+  .pagar { grid-area: pagar; }
+  .rightSide { grid-area: rightSide; }
+  .footer { grid-area: footer;}

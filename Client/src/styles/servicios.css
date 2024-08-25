@@ -3,10 +3,10 @@
     height: 100vh;
     display: grid;
     grid:
-      "nav nav nav" auto
-      "personalizado estampado modelado" 1fr
-      "footer footer footer" auto
-      / auto auto auto;
+      "nav nav nav nav" auto
+      "personalizado estampado modelado rightSide" 0.3fr
+      "footer footer footer footer" auto
+      / auto auto auto 0.1fr;
     gap: 8px;
   }
   
@@ -14,4 +14,5 @@
   .personalizado { grid-area: personalizado; }
   .estampado { grid-area: estampado; }
   .modelado { grid-area: modelado; }
+  .rightSide { grid-area: rightSide;}
   .footer { grid-area: footer; }
