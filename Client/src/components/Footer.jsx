@@ -15,6 +15,19 @@ const Footer = () => {
         </Link>
       <p> ERDE Diseño & Creacion &copy; 2024</p>
       </div>
+      <div className="desarrollador">
+      <a
+            href="https://portafolio-p9aq.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="logo_img"
+              src="/iconos/AGMDesarrollO.png"
+              alt="Facebook"
+            />
+          </a>
+      </div>
       <div className="social-media">
         <Link to="/home">
           <img
@@ -67,6 +80,7 @@ const Footer = () => {
           </a>
         </li>
       </div>
+     
     </footer>
   );
 };

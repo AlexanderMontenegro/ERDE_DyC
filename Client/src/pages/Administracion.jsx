@@ -10,8 +10,8 @@ function Administracion() {
       <div className="nav">
         <Navbar />
       </div>
-      <div className="menu">2</div>
-      <div className="dashboard">3</div>
+      <div className="accesos">2</div>
+      <div className="modificables">3</div>
       <div className="footer"><Footer/></div>
     </div>
   );

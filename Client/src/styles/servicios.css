@@ -5,7 +5,7 @@
     grid:
       "nav nav nav nav" auto
       "personalizado estampado modelado rightSide" 0.3fr
-      "footer footer footer footer" auto
+      "footer footer footer footer" 0.1fr
       / auto auto auto 0.1fr;
     gap: 8px;
   }
