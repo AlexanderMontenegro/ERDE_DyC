@@ -1,18 +1,23 @@
+
 .servicios {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid:
-      "nav nav nav nav" auto
-      "personalizado estampado modelado rightSide" 0.3fr
-      "footer footer footer footer" 0.1fr
-      / auto auto auto 0.1fr;
-    gap: 8px;
-  }
-  
-  .nav { grid-area: nav; }
-  .personalizado { grid-area: personalizado; }
-  .estampado { grid-area: estampado; }
-  .modelado { grid-area: modelado; }
-  .rightSide { grid-area: rightSide;}
-  .footer { grid-area: footer; }
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid:
+    "nav nav nav nav" auto
+    "personalizado estampado modelado rightside" 1fr
+    "footer footer footer footer" auto
+    / 1fr 1fr 1fr 0.1fr;
+  gap: 8px;
+}
+
+.nav { grid-area: nav; }
+.personalizado { grid-area: personalizado; }
+.estampado { grid-area: estampado; }
+.modelado { grid-area: modelado; }
+.rightside { grid-area: rightside; }
+.footer { grid-area: footer; }
+
+.personalizado, .modelado, .estampado{
+  margin-left: 25px;
+}

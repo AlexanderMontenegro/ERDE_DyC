@@ -1,0 +1,27 @@
+
+.carousel_s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    height: 50vh;
+  }
+  
+  .carousel_s-image {
+    width: 80%;
+    height: 100%; 
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    
+  }
+  
+  
+
+
+
+  

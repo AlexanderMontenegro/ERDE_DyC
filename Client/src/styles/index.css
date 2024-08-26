@@ -3,58 +3,31 @@
   --fuenteParrafos: "Noto Sans", sans-serif;
 
   --blanco: #ffffff;
-  --blanco-opaco: rgba(255, 255, 255, 0.5);
   --negro: #000814;
-  --azulOscuro: #001d3d;
   --azul: #003566;
-  --crema: #ffc300;
   --amarillo: #ffd60a;
-
-  --naranja: #ff9f1c;
-  --piel: #ffbf69;
-  --turquesa: #2ec4b6;
-  --celesteOpaco: #6e9c98;
-  --degradado: linear-gradient(145deg, #cbf3f0, #003566);
-
   --celeste: #04b4e0;
   --rojo: #c70039;
+  
   --rojoOscuro: #c70039;
+  --azulOscuro: #001d3d;
+  
   --colorFondo: #a5a3a3;
-
+  
+  --blanco-opaco: rgba(255, 255, 255, 0.5);
   --celeste-transparente: rgba(0, 194, 255, 0.6);
+  --rojo-transparente: rgba(228, 14, 14, 0.6);
   --gris-transparente: rgba(128, 128, 128, 0.5);
   --negro-transparente: rgba(0, 0, 0, 0.6);
-
+  --degradado: linear-gradient(145deg, #cbf3f0, #003566);
+  
   --banner: url("");
   --imgfondo: url("/img/fondo.png");
 }
 
 
 
-/* Variables para el modo oscuro */
-:root[data-theme="dark"] {
-  --blanco: #000814;
-  --negro: #ffffff;
-  --blanco-opaco: rgba(0, 8, 20, 0.5);
-  --azulOscuro: #085ba8;
-  --azul: #001d3d;
-  --crema: #ffc300;
-  --amarillo: #ffd60a;
 
-  --naranja: #ff9f1c;
-  --piel: #ffbf69;
-  --turquesa: #2ec4b6;
-  --celesteOpaco: #cbf3f0;
-
-  --celeste: #04b4e0;
-  --rojo: #c70039;
-  --rojoOscuro: #581845;
-  --colorFondo: #000814;
-  --degradado: linear-gradient(145deg, #003566, #cbf3f0);
-
-  --banner: url("");
-  --imgfondo: url("");
-}
 
 body {
   display: flex;
