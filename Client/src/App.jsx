@@ -9,7 +9,7 @@ import Administracion from './pages/Administracion';
 import Servicios from './pages/Servicios';
 import Estampado_c from './components/Estampado_c';
 import Personalizacion_c from './components/Personalizacion_c';
-import Impresion3d_c from './components/Impresion3D_c';
+import Impresion3d_c from './components/Impresion3d_c';
 
 
 function App() {
