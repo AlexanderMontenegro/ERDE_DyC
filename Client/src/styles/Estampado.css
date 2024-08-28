@@ -1,8 +1,9 @@
 
 
 .estampados {
+  display: flex;
   padding: 20px;
-  /*background-color: var(--gris-transparente);*/
+  /* background-color: var(--gris-transparente); */
   filter: drop-shadow(0 8px 16px var(--rojo-transparente));
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,6 +11,12 @@
   height: 65vh;
   max-width: 30vw;
   max-height: 90%;
+  overflow: visible;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .estampados h2 {
@@ -18,7 +25,7 @@
 }
 
 .estampados p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 20px 0;
   color: var(--blanco);
 }

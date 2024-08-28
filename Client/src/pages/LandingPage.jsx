@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Landingpage.css";
-import imagesData from "../../public/images.json"; 
 
 const LandingPage = () => {
   const navigate = useNavigate();
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    setImages(imagesData);
+    fetch('/destacados.json')
+      .then((response) => response.json())
+      .then((data) => setImages(data))
+      .catch((error) => console.error("Error loading images:", error));
   }, []);
 
   const handleLogoClick = () => {
@@ -24,6 +26,7 @@ const LandingPage = () => {
               key={image.id}
               className="carousel-image"
               style={{ backgroundImage: `url(${image.url})` }}
+              aria-label={`Imagen destacada ${image.id}`}
             ></div>
           ))}
         </div>

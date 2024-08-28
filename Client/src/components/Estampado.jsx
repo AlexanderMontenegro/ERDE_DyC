@@ -38,7 +38,7 @@ function Estampado() {
         
       </div>
 
-      <p>Ofrecemos estampados en serigrafía, sublimación y vinilo para una variedad de artículos.</p>
+      <p>Nuestro servicio de estampado especializado abarca una variedad de técnicas, incluyendo sublimación, serigrafía y vinilo, para crear productos únicos y de alta calidad. Ya sea que necesites prendas personalizadas, artículos promocionales o decoración para eventos, trabajamos con precisión y creatividad para materializar tus ideas. Garantizamos colores vibrantes y detalles nítidos que hacen que cada pieza sea un reflejo perfecto de tus gustos y necesidades, ideal para destacar y dejar huella.</p>
       <Link  to={"/estampado_c"} >
       <button>Ver Más</button>
       </Link>

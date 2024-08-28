@@ -40,7 +40,7 @@ function Impresion3D() {
         
       </div>
 
-      <p>Imprimimos artículos en 3D con la más alta calidad y precisión.</p>
+      <p>Con nuestro servicio de modelado e impresión 3D, llevamos tus ideas al siguiente nivel, creando piezas personalizadas que destacan por su detalle y precisión. Desde llaveros y figuras hasta accesorios únicos, nuestro equipo convierte tus conceptos en realidad, utilizando tecnología avanzada y materiales de alta calidad. Perfecto para regalos personalizados, prototipos, y proyectos creativos, cada creación es diseñada para ser tanto funcional como estéticamente impresionante, adaptándose a tus expectativas.</p>
       <Link to={"/impresion3d_c"} >
       <button>Ver Más</button>
       </Link>
