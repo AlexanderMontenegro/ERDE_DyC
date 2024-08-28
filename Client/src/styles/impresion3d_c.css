@@ -7,7 +7,7 @@
       "leftSide body rightSide" 1fr
       "footer footer footer" auto
       / 0.5fr auto 0.1fr;
-    gap: 8px;
+    gap: 9px;
   }
   
   .nav { grid-area: nav; }

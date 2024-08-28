@@ -7,7 +7,7 @@ function Impresion3d_c() {
   return (
     <div className='impresion3d_c' >
      <div className="nav"><Navbar/></div>
-  <div className="metodos">Opciones de impresion</div>
+  <div className="metodos">Opciones de impresion.</div>
   <div className="body">datos para cotizacion</div>
   <div className="rightSide"><Righside/></div>
   <div className="footer"><Footer/></div>
