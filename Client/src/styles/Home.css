@@ -1,5 +1,5 @@
 .layout {
-  width: 100%;
+  width: auto;
   height: 100vh; 
   display: grid;
   grid-template-areas:
@@ -25,11 +25,12 @@
 
 .body {
   grid-area: body;
-  overflow-y: auto; 
-  max-height: calc(100vh - /* altura del header */ - /* altura del footer */); 
-  padding: 8px; 
-  scrollbar-color: transparent transparent; 
+  overflow-y: auto;
+  max-height: calc(100vh - 80px - 60px); 
+  padding: 8px;
+ 
 }
+
 
 
 .body::-webkit-scrollbar {

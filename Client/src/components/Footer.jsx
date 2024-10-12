@@ -23,7 +23,7 @@ const Footer = () => {
           >
             <img
               className="logo_img"
-              src="/iconos/AGMDesarrollO.png"
+              src="../../dist/iconos/MiLogo.png"
               alt="Facebook"
             />
           </a>

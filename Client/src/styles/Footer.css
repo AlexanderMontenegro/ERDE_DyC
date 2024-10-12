@@ -1,12 +1,13 @@
 
 .footer {
-  background-color: var(--negro); 
-  padding: 5px; 
+  background-color: var(--negro);
   display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap; 
-  gap: 30rem;
-  
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15rem;
+  align-content: space-between;
+  justify-content:space-around;
+
 }
 
 

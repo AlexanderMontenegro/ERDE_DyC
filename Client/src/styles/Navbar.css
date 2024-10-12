@@ -4,8 +4,9 @@
   justify-content: space-evenly;
   background-color: var(--negro-transparente);
   padding: auto ;
-  gap: 20rem;
+  gap: 2rem;
   align-items: center;
+  width: 100%;
 }
   
   .navbar-logo .logo {
@@ -18,7 +19,7 @@
   .navbar-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2px;
   }
   
   .navbar-links li {
