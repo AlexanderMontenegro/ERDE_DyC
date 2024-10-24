@@ -1,35 +1,25 @@
 .articulo {
   border: 1px solid var(--amarillo);
   border-radius: 12px;
-  padding: 16px;
   margin-bottom: 20px;
   background-color: var(--gris-transparente);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: auto;
-  display: grid;
-  grid:
-    "articulo-nombre" auto
-    "articulo-imagen" auto
-    "articulo-info" auto
-    / 1fr;
-  gap: 8px;
-  width: 20%;
-  max-width: 20%;
+  max-width: 15vw;
+  text-align: center;
+  height: 75vh;
 }
 
 .articulo-imagen {
-  grid-area: articulo-imagen;
-  width: 100%;
-  height: 300px; 
-  overflow: hidden;
+  width: 80%;
+  height: 300px;
   border-radius: 12px;
 }
 
 .articulo-imagen img {
-  width: 100%;
-  height: 100%;
+
   object-fit: cover;
+  align-items: center;
 }
 
 .articulo:hover {
@@ -38,8 +28,7 @@
 }
 
 .articulo-nombre {
-  grid-area: articulo-nombre;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--amarillo);
   margin-bottom: 12px;
   transition: color 0.3s ease;

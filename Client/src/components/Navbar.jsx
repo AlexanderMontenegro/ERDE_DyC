@@ -28,7 +28,7 @@ const Navbar = () => {
     <Link to="/usuarios" className="nav-button">Usuarios</Link>
   </li>
   <li>
-    <Link to="/administracion" className="nav-button">Administracion</Link>
+    <Link to="/administracion" className="nav-button">Admin</Link>
   </li>
 </ul>
 

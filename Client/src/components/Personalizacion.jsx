@@ -31,7 +31,7 @@ function Personalizacion() {
 
   return (
     <div className="personalizacion">
-      <h2>Personalización de Artículos</h2>
+      <h2>Personalización</h2>
 
       <div className="carousel_s">
         

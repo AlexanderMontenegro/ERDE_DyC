@@ -1,12 +1,13 @@
 
 .footer {
-  background-color: var(--negro);
+  background-color: var(--negro-transparente);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 15rem;
   align-content: space-between;
-  justify-content:space-around;
+  justify-content:center;
+  width: 100%;
 
 }
 
@@ -16,6 +17,9 @@
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+  height: 80%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .nosotros p{
@@ -32,6 +36,7 @@
   display: flex;
   gap: 30px;
   list-style: none;
+  margin-top: 20px;
  
 }
 
@@ -40,7 +45,22 @@
   height: 8vh;
 }
 
-.desarrollador .logo_img{
-  width: 4vw;
-  height: 8vh;
+.desarrollador .logo_dev{
+  width: 6vw;
+  height: 10vh;
+  margin-top: 20px;
+ 
+}
+
+.logo_dev:hover{
+    animation: spin-horizontal 5s linear infinite;
+    background-color: var(--gris-transparente);
+    padding: 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  
 }

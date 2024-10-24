@@ -19,7 +19,7 @@
   .navbar-links {
     list-style: none;
     display: flex;
-    gap: 2px;
+    gap: 6px;
   }
   
   .navbar-links li {
@@ -40,7 +40,7 @@
   
 .nav-button {
   display: inline-block;
-  width: 8rem;
+  width: 7rem;
   padding: 10px 20px; 
   text-decoration: none;
   text-align: center;

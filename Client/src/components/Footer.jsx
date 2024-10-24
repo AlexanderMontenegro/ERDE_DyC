@@ -22,7 +22,7 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img
-              className="logo_img"
+              className="logo_dev"
               src="../../dist/iconos/MiLogo.png"
               alt="Facebook"
             />
@@ -36,9 +36,6 @@ const Footer = () => {
             alt="Logo"
           />
         </Link>
-
-        
-
         <li>
           <a
             href="https://www.facebook.com/Erde.dyc"
