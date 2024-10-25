@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Righside from "../components/RightSide";
-import "../styles/Impresion3d_c"
+import "../styles/Impresion3d_c.css"
 function Impresion3d_c() {
   return (
     <div className='impresion3d_c' >
