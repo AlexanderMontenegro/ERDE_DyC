@@ -24,7 +24,7 @@ const Footer = () => {
             <img
               className="logo_dev"
               src="../../dist/iconos/MiLogo.png"
-              alt="Facebook"
+              alt="AGM Developer"
             />
           </a>
       </div>
