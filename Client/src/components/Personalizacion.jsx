@@ -1,7 +1,7 @@
 // src/components/Personalizacion.js
 
 import React, { useState, useEffect } from "react";
-import "../styles/personalizacion.css";
+import "../styles/Personalizacion.css";
 import "../styles/Carruserl_s.css";
 import { Link } from "react-router-dom";
 
