@@ -1,0 +1,17 @@
+.favoritos {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid:
+    "nav nav nav" auto
+    "Opciones body rightSide" 1fr
+    "footer footer footer" auto
+    / auto 1fr auto;
+  gap: 8px;
+}
+
+.nav { grid-area: nav; }
+.Opciones { grid-area: Opciones; }
+.body { grid-area: body; }
+.rightSide { grid-area: rightSide; }
+.footer { grid-area: footer; }

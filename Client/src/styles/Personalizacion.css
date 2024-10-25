@@ -1,0 +1,44 @@
+
+
+.personalizacion {
+  display: flex;
+  padding: 20px;
+  /* background-color: var(--gris-transparente); */
+  filter: drop-shadow(0 8px 16px var(--rojo-transparente));
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 65vh;
+  max-width: 30vw;
+  max-height: 90%;
+  overflow: visible;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.personalizacion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.personalizacion p {
+  font-size: 0.8rem;
+  margin: 20px 0;
+  color: var(--blanco);
+}
+
+.personalizacion button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.personalizacion button:hover {
+  background-color: #0056b3;
+}
