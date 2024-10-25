@@ -26,7 +26,9 @@
 .filtros h3, h2 {
   margin: auto;
   font-size: 2.8rem;
-  color: var(--amarillo);
+  color: var(--fucxia);
+  text-align: center;
+  margin-top: 10px;
 }
 
 .filtros h3:hover, h2:hover {

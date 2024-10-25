@@ -1,13 +1,13 @@
 .layout {
-  width: auto;
+  width: 100%;
   height: 100vh; 
   display: grid;
   grid-template-areas:
     "header header header"
     "body body rightSide"
     "footer footer footer";
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 3fr auto;
+  grid-template-rows: .5fr auto .2fr;
   gap: 2px;
 }
 
@@ -17,6 +17,7 @@
 
 .footer {
   grid-area: footer;
+
 }
 
 .rightSide {
@@ -27,7 +28,7 @@
   grid-area: body;
   overflow-y: auto;
   max-height: calc(100vh - 80px - 60px); 
-  padding: 8px;
+ 
  
 }
 
