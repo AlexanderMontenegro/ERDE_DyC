@@ -23,7 +23,7 @@ const Footer = () => {
           >
             <img
               className="logo_dev"
-              src="../../dist/iconos/MiLogo.png"
+              src="../iconos/MiLogo.png"
               alt="AGM Developer"
             />
           </a>
