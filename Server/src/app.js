@@ -9,13 +9,18 @@ const passport = require('passport');
 require('./passport-setup'); 
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./config/swagger');
+require('dotenv').config();
 
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes'); 
 
+
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', 
+  credentials: true
+}));
 app.use(express.json());
 
 // Configuración de sesión y Passport antes de las rutas
