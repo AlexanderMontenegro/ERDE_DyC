@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../styles/Body.css";
 import Articulo from "../components/Articulo";
 import Paginado from "../components/Paginado";
+import { setProductos } from "../actions/productosActions"; // Asegúrate de crear esta acción
 
 const Body = () => {
-  const [articulos, setArticulos] = useState([]);
+  const dispatch = useDispatch();
+  const articulos = useSelector((state) => state.productos.productos);
   const [filtroCategoria, setFiltroCategoria] = useState("");
   const [filtroPrecio, setFiltroPrecio] = useState("");
   const [filtroMaterial, setFiltroMaterial] = useState("");
@@ -14,37 +17,15 @@ const Body = () => {
   const [articlesPerPage] = useState(8);
 
   useEffect(() => {
-    fetch("/art.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => setArticulos(data))
-      .catch((error) => console.error("Error al cargar los artículos:", error));
-  }, []);
+    const fetchArticulos = async () => {
+      const response = await fetch("/api/productos"); // Cambia la ruta según tu API
+      const data = await response.json();
+      dispatch(setProductos(data)); // Carga los productos en el estado de Redux
+    };
+    fetchArticulos();
+  }, [dispatch]);
 
-  const handleFiltroCategoriaChange = (e) => {
-    setFiltroCategoria(e.target.value);
-  };
-
-  const handleFiltroPrecioChange = (e) => {
-    setFiltroPrecio(e.target.value);
-  };
-
-  const handleFiltroMaterialChange = (e) => {
-    setFiltroMaterial(e.target.value);
-  };
-
-  const handleFiltroTalleChange = (e) => {
-    setFiltroTalle(e.target.value);
-  };
-
-  const handleFiltroEstampadoChange = (e) => {
-    setFiltroEstampado(e.target.value);
-  };
-
+  // Filtrado
   const articulosFiltrados = articulos.filter((articulo) => {
     return (
       (filtroCategoria ? articulo.categoria === filtroCategoria : true) &&
@@ -81,7 +62,7 @@ const Body = () => {
     <main className="body_b">
       <div className="filtros">
         <h2>Filtros</h2>
-        <select onChange={handleFiltroCategoriaChange} value={filtroCategoria}>
+        <select onChange={e => setFiltroCategoria(e.target.value)} value={filtroCategoria}>
           <option value="">Todas las categorías</option>
           <option value="Remeras">Remeras</option>
           <option value="Tazas">Tazas</option>
@@ -91,7 +72,7 @@ const Body = () => {
         </select>
 
         <h3>Precio</h3>
-        <select onChange={handleFiltroPrecioChange} value={filtroPrecio}>
+        <select onChange={e => setFiltroPrecio(e.target.value)} value={filtroPrecio}>
           <option value="">Todos los precios</option>
           <option value="low">Menos de $20</option>
           <option value="medium">$20 - $40</option>
@@ -99,7 +80,7 @@ const Body = () => {
         </select>
 
         <h3>Material</h3>
-        <select onChange={handleFiltroMaterialChange} value={filtroMaterial}>
+        <select onChange={e => setFiltroMaterial(e.target.value)} value={filtroMaterial}>
           <option value="">Todos los materiales</option>
           <option value="Algodón">Algodón</option>
           <option value="Cerámica">Cerámica</option>
@@ -108,7 +89,7 @@ const Body = () => {
         </select>
 
         <h3>Talle</h3>
-        <select onChange={handleFiltroTalleChange} value={filtroTalle}>
+        <select onChange={e => setFiltroTalle(e.target.value)} value={filtroTalle}>
           <option value="">Todos los talles</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -122,7 +103,7 @@ const Body = () => {
           type="text"
           placeholder="Buscar por estampado"
           value={filtroEstampado}
-          onChange={handleFiltroEstampadoChange}
+          onChange={e => setFiltroEstampado(e.target.value)}
         />
       </div>
 

@@ -30,6 +30,7 @@ const Navbar = () => {
   <li>
     <Link to="/administracion" className="nav-button">Admin</Link>
   </li>
+  
 </ul>
 
     </nav>
